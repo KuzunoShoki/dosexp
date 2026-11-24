@@ -74,10 +74,25 @@ header{
     padding:12px 20px;
     border-radius:5px;
     font-weight:bold;
+    margin-bottom:10px;
 }
 
 .download-btn:hover{
     background:#004c99;
+}
+
+.download-btn.old{
+    background:#666666;
+}
+
+.download-btn.old:hover{
+    background:#4d4d4d;
+}
+
+.version-block{
+    margin-bottom:20px;
+    padding-bottom:15px;
+    border-bottom:1px solid #e0e0e0;
 }
 
 footer{
@@ -163,18 +178,26 @@ footer{
                 <h1>ダウンロード</h1>
 
                 <p>
-                最新版: DOSEXP 1.0
-                </p>
-
-                <p>
                 対応OS: MS-DOS
                 </p>
 
-                <a href="DOSEXP.EXE"
-                   download
-                   class="download-btn">
-                   DOSEXP.EXE をダウンロード
-                </a>
+                <div class="version-block">
+                    <h2>最新版: DOSEXP 2.0</h2>
+                    <a href="DOSEXP_2.EXE"
+                       download
+                       class="download-btn">
+                       DOSEXP_2.EXE をダウンロード
+                    </a>
+                </div>
+
+                <div>
+                    <h3>旧バージョン: DOSEXP 1.0</h3>
+                    <a href="DOSEXP.EXE"
+                       download
+                       class="download-btn old">
+                       DOSEXP.EXE をダウンロード
+                    </a>
+                </div>
 
                 <p>
                 ※自己責任でご利用ください。
@@ -200,9 +223,6 @@ C:\> DOSEXP
                     <li>ダブルクリックで開く</li>
                     <li>ドラッグでウィンドウ移動</li>
                 </ul>
-
-                <h3> </h3>
-                </p>
             </div>
         </div>
 
